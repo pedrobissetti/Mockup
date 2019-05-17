@@ -1,0 +1,15 @@
+.about--content {
+  width: 70%;
+  margin: 0 auto;
+  &__titulo {
+    text-align: center;
+    font-family: $font--principal;
+    padding-bottom: 20px;
+  }
+  p {
+    text-align: center;
+    font-family: $font--principal;
+    font-size: $font-little;
+    color: #26303a;
+  }
+}

@@ -1,0 +1,45 @@
+.advantage--content {
+  width: 70%;
+  padding: 150px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  &__titulo {
+    text-align: center;
+    font-family: $font--principal;
+  }
+  &__div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+    p {
+      width: 30%;
+      font-size: $font-little;
+    }
+    img {
+      width: 10%;
+    }
+    &--lista {
+      width: 30%;
+      padding: 10px 0;
+      font-size: $font-little;
+      position: relative;
+      li::before {
+        content: "";
+        position: absolute;
+        border-left: 3px solid $cor-principal;
+        border-bottom: 3px solid $cor-principal;
+        width: 11px;
+        height: 5px;
+        left: -30px;
+        margin: 5px 0;
+        transform: rotate(-45deg);
+      }
+      li:nth-child(2) {
+        margin: 10px 0;
+      }
+    }
+  }
+}
