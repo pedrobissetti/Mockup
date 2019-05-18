@@ -17,28 +17,32 @@
     p {
       width: 30%;
       font-size: $font-little;
+      font-family: $font--principal;
     }
     img {
       width: 10%;
     }
     &--lista {
       width: 30%;
-      padding: 10px 0;
+      padding: 20px 0;
       font-size: $font-little;
+      font-family: $font--principal;
       position: relative;
+      
       li::before {
         content: "";
         position: absolute;
         border-left: 3px solid $cor-principal;
         border-bottom: 3px solid $cor-principal;
+        border-top: 3px solid $cor-principal;
+        border-right: 3px solid $cor-principal;
         width: 11px;
-        height: 5px;
+        height: 11px;
         left: -30px;
-        margin: 5px 0;
         transform: rotate(-45deg);
       }
       li:nth-child(2) {
-        margin: 10px 0;
+        padding: 30px 0;
       }
     }
   }

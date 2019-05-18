@@ -19,6 +19,7 @@
     }
     a {
       color: $cor-titulo;
+      
     }
   }
   &--item {
@@ -26,10 +27,21 @@
     margin-left: 250px;
     p {
       margin-right: 20px;
-      font-family: $font--padrao;
+      font-family: $font--principal;
       font-weight: bold;
       font-size: $font-little;
       letter-spacing: .1em;
+      &::after {
+        content: '';
+        display: block;
+        background: $cor-principal;
+        height: 3px;
+        width: 0;
+        transition: .3s;
+      }
+      &:hover::after {
+        width: 100%;
+      }
     }
   }
 }
