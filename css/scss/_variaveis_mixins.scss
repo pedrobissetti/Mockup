@@ -17,3 +17,23 @@ $font-logo: 3.5em;
 // FONT FAMILY
 $font--principal: 'Ubuntu';
 $font--logo: 'SkateCNoSpacing';
+
+// MIX RESPONSIVO
+@mixin device($size) {
+  @if $size == xsm {
+    @media (max-width: 767px) { @content ; }
+  }
+  @else if $size == lg {
+    @media (max-width: 960px) { @content ; }
+ }
+//    @else if $point == tablet {
+//     @media (min-width: 50em) { @content ; }
+//  }
+//   @else if $point == phablet {
+//     @media (min-width: 37.5em)  { @content ; }
+//  }
+//  @else if $point == mobileonly {
+//     @media (max-width: 37.5em)  { @content ; }
+
+//  }
+}
