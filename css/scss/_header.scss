@@ -1,8 +1,8 @@
 .header {
   width: 100%;
+  min-height: 100vh;
   background: url('../../img/bg-header.jpg');
   background-size: cover;
-  min-height: 100vh;
   &--lista {
     display: flex;
     flex-wrap: wrap;
@@ -29,7 +29,7 @@
         margin-right: 20px;
         font-family: $font--principal;
         font-weight: bold;
-        font-size: $font-little;
+        font-size: $font-small;
         letter-spacing: .1em;
         &::after {
           content: '';
@@ -51,7 +51,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-flow: column;
-  padding: 280px 0;
+  margin: 280px 0;
   &--titulo {display: flex;
     width: 100%;
     height: 35px;
@@ -88,7 +88,7 @@
     border: 2px solid $cor-principal;
     align-items: center;
     border-radius: 18px;
-    font-size: $font-little;
+    font-size: $font-small;
     font-family: $font--principal;
     font-weight: bold;
     margin: 0 10px;
@@ -106,11 +106,23 @@
 @include device(xsm) {
   .header {
     min-height: 0;
+    &--lista {
+      &__item {
+        p {
+        margin-right: 0;
+        font-size: $font-x-little;
+        letter-spacing: 0;
+        }
+      }
+    }
   }
   .content {
-    padding: 200px 0;
+    margin: 200px 0;
     &--titulo {
       letter-spacing: 0;
+      &__paragrafo {
+        margin: 40px 0;
+      }
     }
   }
 }

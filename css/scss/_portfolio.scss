@@ -1,19 +1,19 @@
 .portfolio--main {
   display: flex;
-  flex-flow: column nowrap;
-  max-width: 1000px;
-  width: 51%;
+  flex-wrap: wrap;
+  width: 700px;
   margin: 0 auto;
   padding: 80px 0;
   &__titulo {
     text-align: center;
     padding-bottom: 20px;
     font-family: $font--principal;
+    width: 100%;
   }
   &__content {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     justify-content: space-evenly;
     &--item {
       width: 215px;
