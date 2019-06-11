@@ -2,7 +2,7 @@
   display: flex;
   flex-flow: column nowrap;
   max-width: 1000px;
-  width: 50%;
+  width: 51%;
   margin: 0 auto;
   padding: 80px 0;
   &__titulo {
@@ -17,7 +17,7 @@
     justify-content: space-evenly;
     &--item {
       width: 215px;
-      height: 200px;
+      height: 215px;
       background: $cinza-claro;
       &:nth-child(3n) {
         background: $cinza-escuro;
