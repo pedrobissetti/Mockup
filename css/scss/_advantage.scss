@@ -1,7 +1,6 @@
 .advantage--content {
   width: 70%;
-  padding: 150px 0;
-  margin: 0 auto;
+  margin: 150px auto;
   display: flex;
   flex-flow: column;
   flex-wrap: wrap;
@@ -13,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 0;
+    margin: 40px 0;
     p {
       width: 30%;
       font-size: $font-small;
@@ -24,11 +23,9 @@
     }
     &--lista {
       width: 30%;
-      padding: 20px 0;
       font-size: $font-small;
       font-family: $font--principal;
       position: relative;
-      
       li::before {
         content: "";
         position: absolute;
@@ -43,6 +40,34 @@
       }
       li:nth-child(2) {
         padding: 30px 0;
+      }
+    }
+  }
+}
+
+@include device(xsm) {
+  .advantage--content {
+    margin: 70px auto;
+    &__div {
+      flex-direction: column;
+      align-items: center;
+      p {
+        width: 265px;
+      }
+      img {
+        width: 20%;
+        margin: 20px 0;
+      }
+      &--lista {
+        display: flex;
+        justify-content: center;
+        li::before {
+          left: auto;
+        }
+        li:nth-child(2) {
+          padding: 0;
+          margin: 0 50px;
+        }
       }
     }
   }
