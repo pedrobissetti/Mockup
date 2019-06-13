@@ -67,6 +67,7 @@
         font-size: $font-little;
         text-align: center;
         line-height: 15px;
+        justify-content: flex-start;
         li {
           width: 100%;
           &::before {
