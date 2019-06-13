@@ -42,6 +42,10 @@
       color: $cor-titulo;
       font-family: $font--principal;
       font-weight: bold;
+      &:hover {
+        color: $cor-preto;
+        background: $cor-titulo;
+      }
     }
   }
 }
