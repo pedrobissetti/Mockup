@@ -31,10 +31,10 @@
         position: absolute;
         border-left: 3px solid $cor-principal;
         border-bottom: 3px solid $cor-principal;
-        border-top: 3px solid $cor-principal;
-        border-right: 3px solid $cor-principal;
-        width: 11px;
-        height: 11px;
+        // border-top: 3px solid $cor-principal; // caso utilize essa borda, aumentar o width e o height (11px e 11px)
+        // border-right: 3px solid $cor-principal; // caso utilize essa borda, aumentar o width e o height (11px e 11px)
+        width: 14px;
+        height: 8px;
         left: -30px;
         transform: rotate(-45deg);
       }
@@ -48,25 +48,36 @@
 @include device(xsm) {
   .advantage--content {
     margin: 70px auto;
+    align-content: center;
     &__div {
       flex-direction: column;
       align-items: center;
       p {
-        width: 265px;
+        width: 100%;
+        text-align: center;
       }
       img {
         width: 20%;
-        margin: 20px 0;
+        margin: 40px 0;
       }
       &--lista {
+        width: 90%;
         display: flex;
-        justify-content: center;
-        li::before {
-          left: auto;
-        }
-        li:nth-child(2) {
-          padding: 0;
-          margin: 0 50px;
+        font-size: $font-little;
+        text-align: center;
+        line-height: 15px;
+        li {
+          width: 100%;
+          &::before {
+            display: flex;
+            position: relative;
+            top: 15px;
+            left: -20px;
+          }
+          &:nth-child(2) {
+            padding: 0;
+            margin: 0 70px;
+          }
         }
       }
     }
