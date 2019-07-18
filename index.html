@@ -101,6 +101,41 @@
     </div>
   </section>
 
+  <div id="shipping-data" class="x-shipping__frete">
+    <h4 class="x-shipping__frete--title">Calcule o valor do frete</h4>
+    <form class="x-shipping__frete--form" id="shippingForm">
+      <input class="x-shipping__frete--form__input" type="text" id="postalCode" name="postalCode" placeholder="Insira seu CEP"/>
+      <button class="x-shipping__frete--form__btn x-btn" title="Buscar">Calcular</button>
+    </form>
+
+    <div class="x-shipping__results-wrapper">
+      <div class="x-shipping__results-content">
+
+        <div class="x-shipping__frete--error">
+          <p>É uma pena, mas não conseguimos atender este CEP.</p>
+        </div>
+
+        <div class="x-shipping__wrapper">
+          <div class="x-shipping__container"> 
+            <div class="x-shipping__code is--active js--shipping-tab">Entrega para: </div>
+            <a class="link-edit" href="javascript:void(0);" id="force-shipping-fields">Alterar</a>
+            
+          </div>
+              <ul class="x-shipping__body is--active">
+                <h1 class="x-shipping__body--title">Tipo de Envio</h1>
+                <h2 class="x-shipping__body--sub">Preço</h2>
+  
+                <li class="x-shipping__body--type"></li>
+                <li class="x-shipping__body--type"></li>
+  
+                <li class="x-shipping__body--price"></li>
+                <li class="x-shipping__body--price"></li>
+              </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer--content">
     <p>behance.net/ivanvanin</p>
   </footer>

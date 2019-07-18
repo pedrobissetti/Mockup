@@ -1,0 +1,40 @@
+.x-shipping__frete {
+  &--title {
+    color: #656667;
+    font-size: 1.25rem;
+  }
+  &--form {
+    input {
+      width: 15%;
+      padding: 5px 5px;
+      font-size: 0.875em;
+    }
+    button {
+      padding: 8px 5px;
+      background: #90297d;
+      border: none;
+      color: #FFF;
+      font-family: Open Sans, sans-serif;
+      width: 8%;
+      text-transform: uppercase;
+      margin-left: 5px;
+    }
+  }
+  &--error {
+    display: none;
+  }
+  .x-shipping__wrapper {
+    .x-shipping__container {
+      display: flex;
+      .x-shipping__code {
+        white-space: nowrap;
+      }
+      .link-edit {
+        margin: 0 100px;
+        text-decoration: underline;
+        color: #656667;
+      }
+    }
+  }
+}
+ 
