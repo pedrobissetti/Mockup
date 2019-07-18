@@ -18,6 +18,8 @@
       width: 8%;
       text-transform: uppercase;
       margin-left: 5px;
+      letter-spacing: 1px;
+      outline: none;
     }
   }
   &--error {
@@ -33,6 +35,20 @@
         margin: 0 100px;
         text-decoration: underline;
         color: #656667;
+      }
+    }
+    .x-shipping__body {
+      display: flex;
+      justify-content: space-between;
+      width: 15%;
+      &--title {
+        font-size: 0.875em;
+        color: #656667;
+      }
+      &--sub {
+        font-size: 0.875em;
+        color: #656667;
+        margin-left: 100px;
       }
     }
   }
