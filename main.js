@@ -1,3 +1,4 @@
+// Função de SCROLL SUAVE LINK INTERNO
 function initScrollSuave() {
   const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
 
